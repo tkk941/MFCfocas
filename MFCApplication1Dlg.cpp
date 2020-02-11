@@ -22,6 +22,7 @@
 
 using std::cout;
 using std::endl;
+unsigned short Flibhndl{ 0 };
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
 
 class CAboutDlg : public CDialogEx
@@ -197,12 +198,22 @@ HCURSOR CMFCApplication1Dlg::OnQueryDragIcon()
 void CMFCApplication1Dlg::OnBnClickedbut2()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	int ret = cnc_freelibhndl(Flibhndl);
+	if (ret ==EW_OK)
+	{
+		MessageBox(_T("断开连接成功!"), _T("提示"), MB_OKCANCEL);
+	}
+	else
+	{
+		MessageBox(_T("ret不对"), _T("提示"), MB_OKCANCEL);
+	}
+
 }
 
 
 void CMFCApplication1Dlg::OnBnClickedbut1()
 {
-	unsigned short Flibhndl{ 0 };
+	
 	CString ip;
 	CString port;
 	CString timeout;
