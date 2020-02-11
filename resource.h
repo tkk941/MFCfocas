@@ -6,11 +6,11 @@
 #define IDD_ABOUTBOX                    100
 #define IDS_ABOUTBOX                    101
 #define IDD_MFCAPPLICATION1_DIALOG      102
+#define net_test                        102
 #define IDR_MAINFRAME                   128
 #define but1                            1000
 #define but2                            1001
 #define txtip                           1005
-#define IDC_EDIT2                       1006
 #define txttime                         1006
 #define txtport                         1007
 

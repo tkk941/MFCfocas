@@ -41,10 +41,10 @@
     <ClCompile Include="MFCApplication1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MFCApplication1Dlg.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="net_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
